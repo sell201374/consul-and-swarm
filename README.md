@@ -23,7 +23,7 @@ sudo docker run -d -p 3000:2375 swarm manage consul://<<consul machine ip>>:8500
     sudo docker  swarm list consul://<<consul machine ip>>:8500
 6) create containers 
     docker -H tcp://<<first machine ip>>:3000 run -d -P sell201374/nodejs
-7) now you should be able to see the container spread in those two machines..
- docker -H tcp://<<first machine ip>>:3000 run -d -P sell201374/nodejs
+7) now you should be able to see the containers spread in those two machines..
+ docker -H tcp://<<first machine ip>>:3000 ps
 
  
