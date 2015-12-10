@@ -22,7 +22,7 @@ docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
 sudo docker run -d swarm join --advertise=<<first machine ip>>:2375 consul://<<consul machine ip>>:8500
 sudo docker run -d -p 3000:2375 swarm manage consul://<<consul machine ip>>:8500
 
-5) you can see the list of machine now 
+5) One can see the list of machine now 
     sudo docker  swarm list consul://<<consul machine ip>>:8500
     
 6) create containers 
